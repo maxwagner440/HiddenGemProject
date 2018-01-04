@@ -102,109 +102,7 @@
 		
 		</section>
 			
-		<!-- team -->
-		<section id="team" class="team-section appear clearfix">
-		<div class="container">
-
-				<div class="row mar-bot10">
-					<div class="col-md-offset-3 col-md-6">
-						<div class="section-header">
-						<div class="wow bounceIn">
-						
-							<h2 class="section-heading animated" data-animation="bounceInUp">Our Team</h2>
-							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
-						
-						</div>
-						</div>
-					</div>
-				</div>
-
-					<div class="row align-center mar-bot45">
-						<div class="col-md-4">
-						<div class="wow bounceIn" data-animation-delay="4.8s">
-							<div class="team-member">
-								<div class="profile-picture">
-									<figure><img src="img/members3.jpg" alt=""></figure>
-									<div class="profile-overlay"></div>
-										<div class="profile-social">
-											<div class="icons-wrapper">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-linkedin"></i></a>
-												<a href="#"><i class="fa fa-pinterest"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-											</div>
-										</div>
-								</div>
-								<div class="team-detail">
-									<h4>Ron Evgeniy</h4>
-									<span>User experiences</span>
-								</div>
-								<div class="team-bio">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fugiat, harum, adipisci accusantium minus asperiores.</p>
-								</div>
-							</div>
-						</div>
-						</div>
-						<div class="col-md-4">
-							
-							<div class="wow bounceIn">
-							<div class="team-member">
-								<div class="profile-picture">
-									<figure><img src="img/members1.jpg" alt=""></figure>
-									<div class="profile-overlay"></div>
-										<div class="profile-social">
-											<div class="icons-wrapper">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-linkedin"></i></a>
-												<a href="#"><i class="fa fa-pinterest"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-											</div>
-										</div>
-								</div>
-								<div class="team-detail">
-									<h4>Alexander Chernov</h4>
-									<span>Web developer</span>
-								</div>
-								<div class="team-bio">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fugiat, harum, adipisci accusantium minus asperiores.</p>
-								</div>
-							</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="wow bounceIn">
-							<div class="team-member">
-								<div class="profile-picture">
-									<figure><img src="img/members2.jpg" alt=""></figure>
-									<div class="profile-overlay"></div>
-										<div class="profile-social">
-											<div class="icons-wrapper">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-linkedin"></i></a>
-												<a href="#"><i class="fa fa-pinterest"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-											</div>
-										</div>
-								</div>
-								<div class="team-detail">
-									<h4>Jose Manuel</h4>
-									<span>Web designer</span>
-								</div>
-								<div class="team-bio">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fugiat, harum, adipisci accusantium minus asperiores.</p>
-								</div>
-							</div>
-							</div>
-						</div>
-						
-					</div>
-						
-		</div>
-		</section>
-		<!-- /team -->
+		
 		
 		<!-- spacer section:stats -->
 		<section id="parallax1" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
@@ -238,63 +136,7 @@
 			</div>	
 		
 		</section>
-		
-		
-		<!-- contact -->
-		<section id="section-contact" class="section appear clearfix">
-			<div class="container">
-				
-				<div class="row mar-bot40">
-					<div class="col-md-offset-3 col-md-6">
-						<div class="section-header">
-							<h2 class="section-heading animated" data-animation="bounceInUp">Contact us</h2>
-							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="cform" id="contact-form">
-							<div id="sendmessage">
-								 Your message has been sent. Thank you!
-							</div>
-							<form action="contact/contact.php" method="post" role="form" class="contactForm">
-							<div class="wow bounceIn">
-							  <div class="form-group">
-								<label for="name">Your Name</label>
-								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
-								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
-								<label for="email">Your Email</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
-								<label for="subject">Subject</label>
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
-								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
-								<label for="message">Message</label>
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-								<div class="validation"></div>
-							  </div>
-							</div>
-							  <button type="submit" class="line-btn green">SEND MESSAGE</button>
-							</form>
 
-						</div>
-					</div>
-					<!-- ./span12 -->
-				</div>
-				
-			</div>
-		</section>
-		<!-- map -->
-		<section id="section-map" class="clearfix">
-			<div id="map"></div>
-		</section>
 		
 	<section id="footer" class="section footer">
 		<div class="container">
@@ -310,14 +152,7 @@
 				</div>
 			</div>
 
-			<div class="row align-center copyright">
-					<div class="col-sm-12"><p>Copyright &copy; 2014 GREEN - by <a href="http://bootstraptaste.com">Bootstrap Themes</a></p></div>
-                    <!-- 
-                        All links in the footer should remain intact. 
-                        Licenseing information is available at: http://bootstraptaste.com/license/
-                        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Green
-                    -->
-			</div>
+			
 		</div>
 
 	</section>
@@ -341,33 +176,6 @@
 	<script src="js/greenJs/validate.js"></script>
 	<script src="js/greenJs/grid.js"></script>
     <script src="js/greenJs/main.js"></script>
-        <script type="text/javascript">
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#1C705B"		}		]	}	]
-                };
-
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using out element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-            }
-        </script>
 		 <script src="js/greenJs/wow.min.js"></script>
 	 <script>
 	 wow = new WOW(
