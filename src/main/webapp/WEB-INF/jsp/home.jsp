@@ -42,6 +42,36 @@
 
     <body>
     
+    <style>
+	 #map {
+   width: 80%;
+   height: 400px;
+   background-color: grey;
+ }
+ 
+
+ 
+ .outerdiv {
+			border-style: solid;
+			border-width: 20px;
+			border-color: #95be8b;
+  		}
+ 
+      #legend {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border: 3px solid #000;
+      }
+      #legend h3 {
+        margin-top: 0;
+      }
+      #legend img {
+        vertical-align: middle;
+      }
+</style>
+    
         <!-- Loader -->
     	<div class="loader">
     		<div class="loader-img"></div>
@@ -194,17 +224,13 @@
 	        </div>
         </div>
         
-        <!-- Block 2 -->
+        <!-- Map -->
+       
         <div class="block-2-container section-container section-container-gray">
 	        <div class="container">
 	            <div class="row">
-	            	<div class="col-sm-6 block-2-box block-2-left wow fadeInLeft">
-	            		<h3>We design interfaces</h3>
-	            		<p>
-	            			Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-	            			lobortis nisl ut aliquip ex ea commodo consequat.
-	            		</p>
-	            		<ul>
+	             <div class="col-md-4 block-2-box block-2-right wow fadeInUp box-green">
+        <ul>
 	            			<li>
 	            				<span aria-hidden="true" class="icon_check list-icon"></span> Etiam processus dynamicus qui
 	            			</li>
@@ -218,15 +244,15 @@
 	            				<span aria-hidden="true" class="icon_check list-icon"></span> Exerci tation ullamcorper
 	            			</li>
 	            		</ul>
-	            	</div>
-	            	<div class="col-sm-6 block-2-box block-2-right block-2-media wow fadeInUp">
-	            		<div class="block-2-img-container">
-	            			<img src="img/about/5.jpg" alt="" data-at2x="img/about/5.jpg">
-	            			<div class="img-container-line line-1"></div>
-	            			<div class="img-container-line line-2"></div>
-	            			<div class="img-container-line line-3"></div>
-	            		</div>
-	            	</div>
+        </div>
+	            		<div class="col-md-8" >
+		<div class="park-title">
+		
+		</div>
+		<div id="map" class="outerdiv"></div>
+		</div>
+		<div id="legend"><h3>Legend</h3></div>
+		
 	            </div>
 	        </div>
         </div>
@@ -804,6 +830,58 @@
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->
 
+<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: new google.maps.LatLng(41.481829, -81.826539),
+          mapTypeId: 'roadmap'
+        });
+
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var icons = {
+          parking: {
+            name: 'Parking',
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+        
+        };
+
+        var features = [
+          {
+            position: new google.maps.LatLng(41.481678, -81.826158),
+            type: 'parking'
+          }, 
+        ];
+
+        // Create markers.
+        features.forEach(function(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons[feature.type].icon,
+            map: map
+          });
+        });
+
+        var legend = document.getElementById('legend');
+        for (var key in icons) {
+          var type = icons[key];
+          var name = type.name;
+          var icon = type.icon;
+          var div = document.createElement('div');
+          div.innerHTML = '<img src="' + icon + '"> ' + name;
+          legend.appendChild(div);
+        }
+
+        map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
+      }
+    </script>
+ 
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk0sL7hRmBNuoqH7p3kgIasEX1L2jhcJA&callback=initMap">
+   </script> 
     </body>
 
 </html>
