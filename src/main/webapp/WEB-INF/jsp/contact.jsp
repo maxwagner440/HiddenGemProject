@@ -1,4 +1,5 @@
-<%@include file ="/WEB-INF/jsp/common/header.jspf" %>
+
+
 <style>
 	 #map {
    width: 80%;
